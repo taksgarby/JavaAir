@@ -18,5 +18,8 @@ public class FlightManager {
     }
 
 
+    public int getBaggegeWeightBooked() {
+        return getBaggageWeightAllowance()*myFlight.getNumOfBookedPassengers();
+    }
 }
 
