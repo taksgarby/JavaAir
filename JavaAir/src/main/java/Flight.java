@@ -24,8 +24,7 @@ public class Flight {
 
     public Flight(Pilot pilot, ArrayList<CabinCrewMember> cabinCrewMembers, ArrayList<Passenger> bookedPassengers,
                   Plane plane, String flightNum, String destination, String deptAirport,
-                  String deptTime)
-    {
+                  String deptTime) {
         this.pilot = pilot;
         this.cabinCrewMembers = cabinCrewMembers;
         this.bookedPassengers = bookedPassengers;
@@ -71,12 +70,12 @@ public class Flight {
     }
 
     public int getAvailableSeats() {
-       return plane.getCapacity() - this.getNumOfBookedPassengers();
+        return plane.getCapacity() - this.getNumOfBookedPassengers();
     }
 
     public void bookPassenger(Passenger passenger2) {
 
-        this.bookedPassengers.add(passenger2);
-
+        int availableSeats = getAvailableSeats();
+        if (availableSeats != 0) this.bookedPassengers.add(passenger2);
     }
 }

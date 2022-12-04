@@ -15,8 +15,6 @@ public class FlightManager {
 
         return myFlight.getPlane().getTotalWeight() / myFlight.getPlane().getCapacity();
 
-
-
     }
 
 
