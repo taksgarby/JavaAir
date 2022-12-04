@@ -21,5 +21,9 @@ public class FlightManager {
     public int getBaggegeWeightBooked() {
         return getBaggageWeightAllowance()*myFlight.getNumOfBookedPassengers();
     }
+
+    public int getRemainingWeight() {
+        return myFlight.getPlane().getTotalWeight() - getBaggegeWeightBooked();
+    }
 }
 
