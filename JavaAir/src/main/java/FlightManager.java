@@ -13,17 +13,17 @@ public class FlightManager {
 
     public int getBaggageWeightAllowance() {
 
-        return myFlight.getPlane().getTotalWeight() / myFlight.getPlane().getCapacity();
+        return myFlight.getPlane().getTotalWeight() / 2 / myFlight.getPlane().getCapacity() ;
 
     }
 
 
-    public int getBaggegeWeightBooked() {
+    public int getBaggageWeightBooked() {
         return getBaggageWeightAllowance()*myFlight.getNumOfBookedPassengers();
     }
 
     public int getRemainingWeight() {
-        return myFlight.getPlane().getTotalWeight() - getBaggegeWeightBooked();
+        return myFlight.getPlane().getTotalWeight() - getBaggageWeightBooked();
     }
 }
 

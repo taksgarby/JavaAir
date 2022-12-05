@@ -37,20 +37,20 @@ public class FlightManagerTest {
 
     @Test
     public void calculateBaggageWeightAllowance() {
-        assertEquals(2, flightManager.getBaggageWeightAllowance());
+        assertEquals(1, flightManager.getBaggageWeightAllowance());
     }
     
     @Test
     public void calculateBaggageWeightBooked() {
         Passenger passenger2 = new Passenger("Mrs Clause", 2);
         bookedPassengers1.add(passenger2);
-        assertEquals(4, flightManager.getBaggegeWeightBooked());
+        assertEquals(2, flightManager.getBaggageWeightBooked());
     }
 
     @Test
     public void calculateRemainingWeight() {
         Passenger passenger2 = new Passenger("Mrs Clause", 2);
         bookedPassengers1.add(passenger2);
-        assertEquals(1196, flightManager.getRemainingWeight());
+        assertEquals(1198, flightManager.getRemainingWeight());
     }
 }

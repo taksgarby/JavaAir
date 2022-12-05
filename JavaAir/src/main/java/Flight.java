@@ -27,6 +27,7 @@ public class Flight {
                   String deptTime) {
         this.pilot = pilot;
         this.cabinCrewMembers = cabinCrewMembers;
+//        this.cabinCrewMembers = new ArrayList<>();
         this.bookedPassengers = bookedPassengers;
         this.plane = plane;
         this.flightNum = flightNum;
@@ -77,5 +78,7 @@ public class Flight {
 
         int availableSeats = getAvailableSeats();
         if (availableSeats != 0) this.bookedPassengers.add(passenger2);
+//        if plane.getCapacity() > this.getNumOfBookedPassengers
+
     }
 }
