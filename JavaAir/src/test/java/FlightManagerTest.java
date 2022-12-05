@@ -51,6 +51,6 @@ public class FlightManagerTest {
     public void calculateRemainingWeight() {
         Passenger passenger2 = new Passenger("Mrs Clause", 2);
         bookedPassengers1.add(passenger2);
-        assertEquals(1198, flightManager.getRemainingWeight());
+        assertEquals(598, flightManager.getRemainingWeight());
     }
 }
